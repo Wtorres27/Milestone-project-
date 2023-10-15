@@ -1,14 +1,34 @@
 [
-    {
-     "image": "", 
-     "name": "" 
-     },
-     {
-        "image": "", 
-        "name": "Aston Martin" 
-        },
-        {
-            "image": "", 
-            "name": "" 
-            }
-    ]
+  {
+    "image": "assets/Acura.png",
+    "name": "Acura"
+  },
+  {
+    "image": "assets/Astonmartin.png",
+    "name": "Aston Martin"
+  },
+  {
+    "image": "assets/Bugatti.png",
+    "name": "Bugatti"
+  },
+  {
+    "image": "assets/Gwagon.png",
+    "name": "Gwagon"
+  },
+  {
+    "image": "assets/Lambo.png",
+    "name": "Lambo"
+  },
+  {
+    "image": "assets/M4Gold.png",
+    "name": "Bmw"
+  },
+  {
+    "image": "assets/MINI.png",
+    "name": "MINI"
+  },
+  {
+    "image": "assets/subaru.png",
+    "name": "Subaru"
+  }
+]
