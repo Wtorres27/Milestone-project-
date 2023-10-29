@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#title{
+
+text-align: center;
+border-radius: 10px;
+position:relative;
+}
+h1 {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+section {
+  border: 5px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body {
+  height: 100vh;
+  width: auto;
+  background-image: url("https://plus.unsplash.com/premium_photo-1661880595669-2b0f7e2da693?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+img {
+  margin: 2em;
+  align-items: center;
+  width: 100px;
+}
+.memory-game {
+  height: 650px;
+  margin: 10px auto;
+  width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  perspective: 1000px;
+}
+.memory-card {
+  margin: 3px auto;
+  width: calc(25% - 10px);
+  height: calc(25% - 10px);
+  border: 1px solid black;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: .5s;
+}
+.memory-card:active {
+  transform: scale(0.97);
+  transition: 0.2s;
+}
+.memory-card.flip{
+  transform: rotateY(180deg);
+}
+div {
+  background-color: rgb(243, 241, 237);
+  align-items: center;
+  margin: 5px auto;
+  border-radius: 5px;
+
+}
+
+.front-face,
+.back-face {
+  width: 70%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.front-face{
+  transform: rotateY(180deg);
+}
