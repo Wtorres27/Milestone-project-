@@ -3,11 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-#title{
-
-text-align: center;
-border-radius: 10px;
-position:relative;
+#title {
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
 }
 h1 {
   width: 100%;
@@ -33,9 +32,9 @@ img {
   width: 100px;
 }
 .memory-game {
-  height: 650px;
+  height: 450px;
   margin: 10px auto;
-  width: 650px;
+  width: 450px;
   display: flex;
   flex-wrap: wrap;
   margin: 5px;
@@ -43,19 +42,19 @@ img {
 }
 .memory-card {
   margin: 3px auto;
-  width: calc(25% - 10px);
-  height: calc(25% - 10px);
+  width: calc(25% - 5px);
+  height: calc(25% - 5px);
   border: 1px solid black;
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
-  transition: .5s;
+  transition: 0.5s;
 }
 .memory-card:active {
   transform: scale(0.97);
   transition: 0.2s;
 }
-.memory-card.flip{
+.memory-card.flip {
   transform: rotateY(180deg);
 }
 div {
@@ -63,15 +62,14 @@ div {
   align-items: center;
   margin: 5px auto;
   border-radius: 5px;
-
 }
 
 .front-face,
 .back-face {
-  width: 70%;
+  width: 50%;
   position: absolute;
   backface-visibility: hidden;
 }
-.front-face{
+.front-face {
   transform: rotateY(180deg);
 }
